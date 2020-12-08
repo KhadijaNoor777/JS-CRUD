@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="javascript:void(0);" method="post" id="f1" onsubmit="add()">
+            
+            <input type="text" name="bname" placeholder="Name">
+            <input type="submit" value="Add" />
+        </form>
+        <!-- <button onclick="add()">Submit</button> -->
+        
+        
+    </div>
+    <div id="spoiler" style="display: none;" role="aria-hidden">
+        <form action="javascript:void(0);" method="POST" id="saveEdit">
+        <input type="text" id="edit-name">
+        <input type="submit" value="Update" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+        </form>
+       </div>
+    <button onclick="view()">View</button>
+    <!-- <span id="sp1">123</span>
+    <p id="p1">this</p> -->
+    <div id="dis"></div>
+    
+    <script src="./crud.js"></script>
+</body>
+</html>
